@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eee3d5">
+<meta name="description" content="دعوة زفاف ياسين وصفا — 21 نوفمبر 2026">
+<title>Yassine & Safa | دعوة زفاف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#b88a45;--gold2:#d7b06a;--cream:#fffaf2;--brown:#6f4b27;--glass:rgba(255,250,242,.68);--line:rgba(184,138,69,.55)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;background:transparent !important}
+body{margin:0;color:var(--brown);font-family:Amiri,serif;overflow-x:hidden;background:transparent !important;min-height:100vh}
+.bg{position:fixed;inset:0;width:100vw;height:100vh;height:100svh;z-index:0;object-fit:cover;object-position:center center;pointer-events:none}
+.bgShade{position:fixed;inset:0;background:linear-gradient(to bottom,rgba(255,250,245,.05),rgba(91,62,101,.13));z-index:1;pointer-events:none}
+#gate{position:fixed;inset:0;z-index:100;background:#eee3d5;display:flex;align-items:center;justify-content:center;transition:opacity .9s,visibility .9s}
+#gate.hide{opacity:0;visibility:hidden;pointer-events:none}
+.coverBtn{border:0;background:none;padding:0;width:min(100vw,620px);cursor:pointer;filter:drop-shadow(0 18px 30px rgba(75,48,30,.25));animation:float 3.5s ease-in-out infinite}
+.coverBtn img{display:block;width:100%;height:auto}
+@keyframes float{50%{transform:translateY(-6px)}}
+main{position:relative;z-index:2;opacity:0;transform:translateY(16px);transition:opacity 1s,transform 1s}
+main.show{opacity:1;transform:none}
+.section{width:min(100%,760px);margin:auto;padding:38px 18px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.opening{padding-top:24px}
+.opening img{width:min(100%,560px);border-radius:28px;display:block;box-shadow:0 22px 55px rgba(50,32,30,.28)}
+.musicWrap{width:min(100%,650px);display:flex;justify-content:center;margin-top:-4px}
+.musicBtn{border:0;background:none;padding:0;cursor:pointer;filter:drop-shadow(0 15px 28px rgba(45,25,30,.25));transition:transform .25s}
+.musicBtn:active{transform:scale(.97)}
+.musicBtn img{width:min(92vw,470px);height:auto;display:block}
+.card{width:100%;padding:28px 20px;border:1px solid var(--line);border-radius:28px;background:rgba(255,250,242,.72);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);box-shadow:0 18px 45px rgba(62,39,37,.16)}
+.names{text-align:center;padding:18px 10px}
+.names .dua{font-size:clamp(21px,5vw,32px);line-height:1.7;margin:0 0 10px}
+.names .couple{font-family:'Cormorant Garamond',serif;direction:ltr;font-size:clamp(48px,12vw,88px);line-height:.95;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45);font-weight:500}
+.names .date{margin-top:22px;font-family:'Cormorant Garamond',serif;direction:ltr;font-size:clamp(24px,6vw,38px);letter-spacing:4px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.heading{font-size:clamp(30px,7vw,46px);margin:0;text-align:center;color:#7b5227}
+.subheading{font-family:'Cormorant Garamond',serif;direction:ltr;font-size:28px;margin:-10px 0 8px;color:#8c683c}
+.timeline{width:100%;display:grid;gap:12px;margin-top:10px}
+.event{display:grid;grid-template-columns:76px 1fr;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:22px;background:rgba(255,252,247,.62)}
+.icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);background:rgba(255,248,237,.8);font-size:27px}
+.event h3{margin:0;font-size:23px;font-weight:700}.event p{margin:3px 0 0;font-family:'Cormorant Garamond',serif;direction:ltr;font-size:24px;color:#8b6230}
+.lang{direction:ltr;text-align:left;font-family:'Cormorant Garamond',serif;font-size:20px;color:#765c40;margin-top:3px}
+.noteImg{width:min(100%,620px);height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(56,37,30,.18))}
+.extraImg{width:min(100%,620px);height:auto;display:block;object-fit:contain;filter:drop-shadow(0 18px 30px rgba(56,37,30,.18))}
+.rsvp{text-align:center}.rsvp p{font-size:21px;margin:6px 0 20px}.form{display:grid;gap:13px;text-align:right}.form label{font-size:19px}.form input,.form select{width:100%;padding:14px 15px;border-radius:15px;border:1px solid var(--line);background:rgba(255,255,255,.72);font:inherit;color:#51371f;outline:none}.form input:focus,.form select:focus{box-shadow:0 0 0 3px rgba(184,138,69,.15)}.submit{border:0;border-radius:16px;padding:14px 20px;background:linear-gradient(135deg,#a97634,#d5ae69);color:#fff;font:700 20px Amiri;cursor:pointer;box-shadow:0 12px 24px rgba(110,70,25,.22)}
+.status{min-height:28px;text-align:center;font-size:17px;margin-top:5px}.success{color:#497248}.error{color:#9b3e3e}
+.footer{text-align:center;padding:25px 18px 55px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.5)}.footer .small{font-size:20px}.footer .couple{font-family:'Cormorant Garamond',serif;direction:ltr;font-size:44px}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}
+.music-floating{position:fixed;top:18px;left:18px;z-index:30;width:54px;height:54px;border-radius:50%;border:1px solid rgba(255,255,255,.75);background:rgba(90,60,90,.65);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.2);cursor:pointer;font-size:25px}.music-floating.show{display:flex}
+@media (max-width:520px){.section{padding:28px 13px}.card{padding:22px 14px;border-radius:22px}.event{grid-template-columns:60px 1fr;padding:12px}.icon{width:50px;height:50px;font-size:23px}.event h3{font-size:21px}.event p{font-size:22px}.names .couple{font-size:48px}.opening img{border-radius:20px}}
+
+/* ===== برنامج الحفل: بسيط، أنيق، شفاف ===== */
+.program-card{
+    width:100%;
+    padding:25px 16px;
+    border:1px solid rgba(255,255,255,.38);
+    border-radius:28px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+    box-shadow:0 18px 45px rgba(35,20,45,.13);
+}
+
+.program-title{
+    margin:0;
+    text-align:center;
+    color:#fff;
+    font-size:clamp(30px,7vw,44px);
+    text-shadow:0 2px 12px rgba(0,0,0,.30);
+}
+
+.program-subtitle{
+    margin:2px 0 22px;
+    text-align:center;
+    direction:ltr;
+    color:rgba(255,255,255,.82);
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+}
+
+.program-list{
+    display:grid;
+    gap:11px;
+}
+
+.program-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-height:76px;
+    padding:11px 14px;
+    border:1px solid rgba(255,255,255,.30);
+    border-radius:19px;
+    background:rgba(255,255,255,.11);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+}
+
+.program-icon{
+    flex:0 0 47px;
+    width:47px;
+    height:47px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.55);
+    background:rgba(255,255,255,.12);
+    color:#fff;
+}
+
+.program-icon svg{
+    width:23px;
+    height:23px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.65;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.program-info{
+    flex:1;
+    min-width:0;
+}
+
+.program-info h3{
+    margin:0;
+    color:#fff;
+    font-size:21px;
+    line-height:1.3;
+    font-weight:700;
+    text-shadow:0 2px 8px rgba(0,0,0,.22);
+}
+
+.program-time{
+    margin-top:2px;
+    direction:ltr;
+    text-align:right;
+    color:rgba(255,255,255,.95);
+    font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+}
+
+.program-fr{
+    margin-top:0;
+    direction:ltr;
+    text-align:right;
+    color:rgba(255,255,255,.70);
+    font-family:'Cormorant Garamond',serif;
+    font-size:15px;
+}
+
+@media(max-width:520px){
+    .program-card{padding:21px 11px;border-radius:25px}
+    .program-item{min-height:70px;padding:9px 10px;gap:11px;border-radius:17px}
+    .program-icon{flex-basis:43px;width:43px;height:43px}
+    .program-icon svg{width:21px;height:21px}
+    .program-info h3{font-size:19px}
+    .program-time{font-size:18px}
+    .program-fr{font-size:14px}
+}
+
+
+/* ===== تأكيد الحضور — تصميم أنيق وشفاف ===== */
+
+.rsvp-card{
+    width:100%;
+    padding:28px 18px 24px;
+    border:1px solid rgba(255,255,255,.38);
+    border-radius:30px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    box-shadow:0 18px 45px rgba(35,20,45,.14);
+    text-align:center;
+}
+
+.rsvp-title{
+    margin:0;
+    color:#fff;
+    font-size:clamp(30px,7vw,44px);
+    text-shadow:0 2px 12px rgba(0,0,0,.30);
+}
+
+.rsvp-subtitle{
+    margin:2px 0 7px;
+    direction:ltr;
+    color:rgba(255,255,255,.82);
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+}
+
+.rsvp-message{
+    margin:0 auto 21px;
+    max-width:520px;
+    color:rgba(255,255,255,.90);
+    font-size:19px;
+    line-height:1.8;
+    text-shadow:0 2px 7px rgba(0,0,0,.18);
+}
+
+.rsvp-form{
+    display:grid;
+    gap:11px;
+    text-align:right;
+}
+
+.rsvp-field{
+    position:relative;
+}
+
+.rsvp-field-icon{
+    position:absolute;
+    top:50%;
+    right:14px;
+    transform:translateY(-50%);
+    width:21px;
+    height:21px;
+    color:rgba(255,255,255,.82);
+    pointer-events:none;
+}
+
+.rsvp-field-icon svg{
+    width:100%;
+    height:100%;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.6;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.rsvp-input,
+.rsvp-select{
+    width:100%;
+    min-height:54px;
+    padding:12px 45px 12px 15px;
+    border:1px solid rgba(255,255,255,.38);
+    border-radius:17px;
+    background:rgba(255,255,255,.13);
+    color:#fff;
+    font:inherit;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
+}
+
+.rsvp-input::placeholder{
+    color:rgba(255,255,255,.70);
+}
+
+.rsvp-select{
+    cursor:pointer;
+}
+
+.rsvp-select option{
+    color:#4c3528;
+    background:#fffaf2;
+}
+
+.rsvp-input:focus,
+.rsvp-select:focus{
+    border-color:rgba(255,255,255,.72);
+    background:rgba(255,255,255,.18);
+    box-shadow:0 0 0 3px rgba(255,255,255,.08);
+}
+
+.rsvp-select-wrap::after{
+    content:"⌄";
+    position:absolute;
+    left:16px;
+    top:50%;
+    transform:translateY(-58%);
+    color:rgba(255,255,255,.82);
+    font-size:22px;
+    pointer-events:none;
+}
+
+.rsvp-submit{
+    width:100%;
+    min-height:55px;
+    margin-top:3px;
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:17px;
+    background:rgba(255,255,255,.18);
+    color:#fff;
+    font:700 20px Amiri;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(35,20,45,.14);
+    transition:transform .2s, background .2s;
+}
+
+.rsvp-submit:hover{
+    background:rgba(255,255,255,.25);
+}
+
+.rsvp-submit:active{
+    transform:scale(.98);
+}
+
+.rsvp-status{
+    min-height:26px;
+    margin-top:4px;
+    color:rgba(255,255,255,.90);
+    font-size:16px;
+}
+
+.rsvp-status.success{
+    color:#fff;
+}
+
+.rsvp-status.error{
+    color:#ffe0e0;
+}
+
+@media(max-width:520px){
+    .rsvp-card{
+        padding:23px 12px 21px;
+        border-radius:26px;
+    }
+
+    .rsvp-message{
+        font-size:18px;
+        margin-bottom:18px;
+    }
+
+    .rsvp-input,
+    .rsvp-select{
+        min-height:52px;
+    }
+
+    .rsvp-submit{
+        min-height:53px;
+        font-size:19px;
+    }
+}
+
+
+/* ===== قسم العروسين — نفس أسلوب تأكيد الحضور ===== */
+.names-card{
+    width:100%;
+    padding:28px 18px 26px;
+    border:1px solid rgba(255,255,255,.38);
+    border-radius:30px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    box-shadow:0 18px 45px rgba(35,20,45,.14);
+    text-align:center;
+}
+
+.names-dua{
+    margin:0 0 13px;
+    color:rgba(255,255,255,.94);
+    font-size:clamp(21px,5vw,29px);
+    line-height:1.8;
+    text-shadow:0 2px 10px rgba(0,0,0,.30);
+}
+
+.names-divider{
+    width:75px;
+    height:1px;
+    margin:0 auto 18px;
+    background:rgba(255,255,255,.55);
+}
+
+.names-couple{
+    direction:ltr;
+    font-family:'Cormorant Garamond',serif;
+    color:#fff;
+    font-size:clamp(46px,11vw,76px);
+    line-height:1;
+    font-weight:500;
+    text-shadow:0 3px 15px rgba(0,0,0,.38);
+}
+
+.names-couple .amp{
+    color:#e6c783;
+    margin:0 7px;
+}
+
+.names-date{
+    display:inline-block;
+    margin-top:20px;
+    padding:9px 22px;
+    border:1px solid rgba(255,255,255,.34);
+    border-radius:15px;
+    background:rgba(255,255,255,.11);
+    direction:ltr;
+    font-family:'Cormorant Garamond',serif;
+    color:rgba(255,255,255,.96);
+    font-size:clamp(21px,5vw,30px);
+    letter-spacing:3px;
+    text-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+@media(max-width:520px){
+    .names-card{
+        padding:23px 12px 22px;
+        border-radius:26px;
+    }
+
+    .names-dua{
+        font-size:20px;
+    }
+
+    .names-couple{
+        font-size:45px;
+    }
+
+    .names-date{
+        font-size:20px;
+        padding:8px 18px;
+    }
+}
+
+
+/* ===== معرض الصور ===== */
+.gallery-card{
+    width:100%;
+    padding:24px 14px;
+    border:1px solid rgba(255,255,255,.38);
+    border-radius:30px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    box-shadow:0 18px 45px rgba(35,20,45,.14);
+}
+.gallery-title{
+    margin:0;
+    text-align:center;
+    color:#fff;
+    font-size:clamp(30px,7vw,44px);
+    text-shadow:0 2px 12px rgba(0,0,0,.30);
+}
+.gallery-subtitle{
+    margin:2px 0 20px;
+    text-align:center;
+    direction:ltr;
+    color:rgba(255,255,255,.82);
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.gallery-item{
+    margin:0;
+    overflow:hidden;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.30);
+    background:rgba(255,255,255,.10);
+    aspect-ratio:1/1;
+}
+.gallery-item img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+@media(max-width:520px){
+    .gallery-card{padding:21px 10px;border-radius:26px}
+    .gallery-grid{gap:8px}
+    .gallery-item{border-radius:15px}
+    .gallery-subtitle{font-size:20px;margin-bottom:16px}
+}
+
+</style>
+</head>
+<body>
+<img class="bg" src="background.png" alt="">
+<div class="bgShade"></div>
+
+<div id="gate" aria-label="فتح الدعوة">
+  <button class="coverBtn" id="openInvitation" aria-label="اضغط هنا لفتح الدعوة">
+    <img src="cover.png" alt="دعوة زفاف ياسين وصفا — اضغط لفتح الدعوة">
+  </button>
+</div>
+
+<audio id="weddingMusic" src="music.mp3" preload="auto" loop></audio>
+<button id="floatingMusic" class="music-floating" aria-label="تشغيل أو إيقاف الموسيقى">♫</button>
+
+<main id="content">
+  <section class="section opening reveal">
+    <img src="opening.png" alt="Yassine & Safa — 21 نوفمبر 2026">
+  </section>
+
+  <section class="section reveal">
+    <div class="musicWrap">
+      <button class="musicBtn" id="musicButton" aria-label="تشغيل أو إيقاف الموسيقى">
+        <img src="music-icon.png" alt="مشغل الموسيقى">
+      </button>
+    </div>
+  </section>
+
+  <section class="section reveal">
+
+    <div class="names-card">
+
+      <p class="names-dua">
+        اللهم اجعل لهما حياةً سعيدة
+      </p>
+
+      <div class="names-divider"></div>
+
+      <div class="names-couple">
+        Yassine
+        <span class="amp">&amp;</span>
+        Safa
+      </div>
+
+      <div class="names-date">
+        21 - 11 - 2026
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="section reveal">
+    <img class="extraImg" src="invitation-1.png" alt="تفاصيل من الدعوة">
+  </section>
+
+  <section class="section reveal">
+
+    <div class="program-card">
+
+      <h2 class="program-title">برنامج الحفل</h2>
+      <div class="program-subtitle">Programme de la soirée</div>
+
+      <div class="program-list">
+
+        <div class="program-item">
+          <div class="program-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M19 8v6M22 11h-6"/>
+            </svg>
+          </div>
+          <div class="program-info">
+            <h3>استقبال الضيوف</h3>
+            <div class="program-time">14:00</div>
+            <div class="program-fr">Accueil des invités</div>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <div class="program-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v18"/>
+              <path d="M7 7c2-2 8-2 10 0"/>
+              <path d="M6 12c2-2 10-2 12 0"/>
+              <path d="M5 17c3-2 11-2 14 0"/>
+            </svg>
+          </div>
+          <div class="program-info">
+            <h3>التصديرة</h3>
+            <div class="program-time">14:00 — 18:00</div>
+            <div class="program-fr">La cérémonie traditionnelle</div>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <div class="program-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 3v8"/>
+              <path d="M4 3v5a3 3 0 0 0 6 0V3"/>
+              <path d="M7 11v10"/>
+              <path d="M17 3v18"/>
+              <path d="M17 3c3 2 3 7 0 9"/>
+            </svg>
+          </div>
+          <div class="program-info">
+            <h3>العشاء</h3>
+            <div class="program-time">18:00</div>
+            <div class="program-fr">Dîner</div>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <div class="program-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8.5"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <div class="program-info">
+            <h3>بقية السهرة</h3>
+            <div class="program-time">بعد العشاء</div>
+            <div class="program-fr">Suite de la soirée</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section reveal">
+    <div class="gallery-card">
+      <h2 class="gallery-title">معرض الصور</h2>
+      <div class="gallery-subtitle">Galerie de photos</div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="gallery-1.jpg" alt="صورة من معرض الصور">
+        </figure>
+        <figure class="gallery-item">
+          <img src="gallery-2.jpg" alt="صورة من معرض الصور">
+        </figure>
+        <figure class="gallery-item">
+          <img src="gallery-3.jpg" alt="صورة من معرض الصور">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <img class="noteImg" src="instructions.png" alt="ملاحظة: يمنع دخول الأطفال والتصوير">
+  </section>
+
+  <section class="section reveal">
+
+    <div class="rsvp-card">
+
+      <h2 class="rsvp-title">تأكيد الحضور</h2>
+
+      <div class="rsvp-subtitle">
+        Confirmation de présence
+      </div>
+
+      <p class="rsvp-message">
+        يسعدنا حضوركم ومشاركتنا فرحة هذا اليوم المميز
+      </p>
+
+      <form class="rsvp-form" id="rsvpForm">
+
+        <div class="rsvp-field">
+
+          <span class="rsvp-field-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M2 21a7 7 0 0 1 14 0"/>
+              <path d="M16 11a4 4 0 1 0 0-8"/>
+              <path d="M17 14a6 6 0 0 1 5 6"/>
+            </svg>
+          </span>
+
+          <input
+            class="rsvp-input"
+            id="guestName"
+            name="name"
+            type="text"
+            placeholder="الاسم واللقب"
+            required
+            maxlength="80"
+          >
+
+        </div>
+
+
+        <div class="rsvp-field rsvp-select-wrap">
+
+          <span class="rsvp-field-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M2 21a7 7 0 0 1 14 0"/>
+              <path d="M16 7h6"/>
+              <path d="M19 4v6"/>
+            </svg>
+          </span>
+
+          <select
+            class="rsvp-select"
+            id="guestCount"
+            name="guests"
+            required
+          >
+            <option value="">عدد الحضور</option>
+            <option value="1">شخص واحد</option>
+            <option value="2">شخصان</option>
+            <option value="3">3 أشخاص</option>
+            <option value="4">4 أشخاص</option>
+            <option value="5">5 أشخاص</option>
+          </select>
+
+        </div>
+
+
+        <button
+          class="rsvp-submit"
+          type="submit"
+        >
+          تأكيد الحضور
+        </button>
+
+
+        <div
+          id="rsvpStatus"
+          class="rsvp-status"
+          aria-live="polite"
+        ></div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <footer class="footer reveal">
+    <div class="small">ننتظر قدومكم بكل محبة</div>
+    <div class="couple">Yassine &amp; Safa</div>
+    <div class="small">21 · 11 · 2026</div>
+  </footer>
+</main>
+
+<script>
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbznuYmAejHIdXyadCePz5tCXRqXyEx3aeEa1aES-pZNqpLP2idNvopVOofvKSbAV4Km8A/exec";
+const gate = document.getElementById('gate');
+const content = document.getElementById('content');
+const music = document.getElementById('weddingMusic');
+const musicButton = document.getElementById('musicButton');
+const floatingMusic = document.getElementById('floatingMusic');
+let opened = false;
+
+async function playMusic(){
+  try { await music.play(); } catch(e) {}
+}
+function toggleMusic(){
+  if(music.paused){ playMusic(); } else { music.pause(); }
+}
+musicButton.addEventListener('click', toggleMusic);
+floatingMusic.addEventListener('click', toggleMusic);
+
+document.getElementById('openInvitation').addEventListener('click', async ()=>{
+  if(opened) return;
+  opened = true;
+  gate.classList.add('hide');
+  content.classList.add('show');
+  floatingMusic.classList.add('show');
+  await playMusic();
+  setTimeout(()=>document.querySelector('.opening')?.scrollIntoView({behavior:'smooth'}), 500);
+});
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const form=document.getElementById('rsvpForm');
+const status=document.getElementById('rsvpStatus');
+form.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const name=document.getElementById('guestName').value.trim();
+  const guests=document.getElementById('guestCount').value;
+  if(!name || !guests) return;
+  if(GOOGLE_SCRIPT_URL.includes('PASTE_')){
+    status.className='rsvp-status error';
+    status.textContent='نموذج الحضور جاهز، وسنربطه بـ Google Sheets بعد وضع رابط النموذج.';
+    return;
+  }
+  status.className='rsvp-status'; status.textContent='جارٍ تسجيل حضوركم…';
+  try{
+    await fetch(GOOGLE_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,guests,date:'21-11-2026',event:'Yassine & Safa'})});
+    status.className='rsvp-status success'; status.textContent='تم تسجيل تأكيد حضوركم، شكرًا لكم ♥';
+    form.reset();
+  }catch(err){
+    status.className='rsvp-status error'; status.textContent='تعذر التسجيل الآن، يرجى المحاولة مرة أخرى.';
+  }
+});
+</script>
+</body>
+</html>
