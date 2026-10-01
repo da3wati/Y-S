@@ -523,6 +523,116 @@ main.show{opacity:1;transform:none}
   border-color:rgba(0,0,0,.25);
 }
 
+
+/* ===== العد التنازلي ===== */
+.countdown-card{
+  width:100%;
+  padding:26px 16px 24px;
+  border:1px solid rgba(255,255,255,.38);
+  border-radius:30px;
+  background:rgba(255,255,255,.10);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  box-shadow:0 18px 45px rgba(35,20,45,.14);
+  text-align:center;
+}
+.countdown-title{
+  margin:0;
+  color:#000;
+  font-size:clamp(30px,7vw,44px);
+  text-shadow:none;
+}
+.countdown-subtitle{
+  margin:2px 0 20px;
+  direction:ltr;
+  color:#000;
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;
+}
+.countdown-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  direction:ltr;
+}
+.countdown-box{
+  padding:14px 6px 11px;
+  border:1px solid rgba(0,0,0,.20);
+  border-radius:18px;
+  background:rgba(255,255,255,.30);
+}
+.countdown-number{
+  display:block;
+  direction:ltr;
+  color:#000;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(29px,8vw,46px);
+  line-height:1;
+  font-weight:600;
+}
+.countdown-label{
+  display:block;
+  margin-top:7px;
+  color:#000;
+  font-size:16px;
+}
+.location-card{
+  width:100%;
+  padding:25px 16px;
+  border:1px solid rgba(255,255,255,.38);
+  border-radius:30px;
+  background:rgba(255,255,255,.10);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  box-shadow:0 18px 45px rgba(35,20,45,.14);
+  text-align:center;
+}
+.location-title{
+  margin:0;
+  color:#000;
+  font-size:clamp(30px,7vw,44px);
+}
+.location-subtitle{
+  margin:2px 0 18px;
+  direction:ltr;
+  color:#000;
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;
+}
+.location-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:54px;
+  padding:12px 25px;
+  border:1px solid rgba(0,0,0,.25);
+  border-radius:17px;
+  background:rgba(255,255,255,.30);
+  color:#000;
+  text-decoration:none;
+  font:700 20px Amiri;
+  transition:transform .2s,background .2s;
+}
+.location-button:hover{background:rgba(255,255,255,.45)}
+.location-button:active{transform:scale(.98)}
+.location-button svg{
+  width:22px;
+  height:22px;
+  fill:none;
+  stroke:#000;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+@media(max-width:520px){
+  .countdown-card,.location-card{padding:22px 11px;border-radius:26px}
+  .countdown-grid{gap:7px}
+  .countdown-box{padding:12px 4px 10px;border-radius:15px}
+  .countdown-number{font-size:31px}
+  .countdown-label{font-size:14px}
+}
+
 </style>
 </head>
 <body>
@@ -578,6 +688,33 @@ main.show{opacity:1;transform:none}
 
   <section class="section reveal">
     <img class="extraImg" src="invitation-1.png" alt="تفاصيل من الدعوة">
+  </section>
+
+
+  <section class="section reveal">
+    <div class="countdown-card">
+      <h2 class="countdown-title">العد التنازلي</h2>
+      <div class="countdown-subtitle">Countdown to our wedding</div>
+
+      <div class="countdown-grid" id="countdown">
+        <div class="countdown-box">
+          <span class="countdown-number" id="cdDays">0</span>
+          <span class="countdown-label">يوم</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-number" id="cdHours">0</span>
+          <span class="countdown-label">ساعة</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-number" id="cdMinutes">0</span>
+          <span class="countdown-label">دقيقة</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-number" id="cdSeconds">0</span>
+          <span class="countdown-label">ثانية</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section reveal">
@@ -654,6 +791,26 @@ main.show{opacity:1;transform:none}
       </div>
     </div>
 
+  </section>
+
+
+  <section class="section reveal">
+    <div class="location-card">
+      <h2 class="location-title">موقع الحفل</h2>
+      <div class="location-subtitle">Wedding Location</div>
+
+      <a class="location-button"
+         href="https://maps.app.goo.gl/CEF3tU3BD52qiX3o7"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="فتح موقع الحفل على خرائط Google">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+        فتح الموقع على Google Maps
+      </a>
+    </div>
   </section>
 
   <section class="section reveal">
@@ -806,6 +963,38 @@ const observer = new IntersectionObserver(entries=>{
   entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
 },{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+
+// ===== العد التنازلي إلى موعد الزفاف =====
+const weddingDate = new Date('2026-11-21T14:00:00+02:00').getTime();
+
+function updateCountdown(){
+  const now = Date.now();
+  let diff = weddingDate - now;
+
+  if(diff <= 0){
+    document.getElementById('cdDays').textContent = '0';
+    document.getElementById('cdHours').textContent = '0';
+    document.getElementById('cdMinutes').textContent = '0';
+    document.getElementById('cdSeconds').textContent = '0';
+    return;
+  }
+
+  const days = Math.floor(diff / 86400000);
+  diff %= 86400000;
+  const hours = Math.floor(diff / 3600000);
+  diff %= 3600000;
+  const minutes = Math.floor(diff / 60000);
+  const seconds = Math.floor((diff % 60000) / 1000);
+
+  document.getElementById('cdDays').textContent = String(days);
+  document.getElementById('cdHours').textContent = String(hours).padStart(2,'0');
+  document.getElementById('cdMinutes').textContent = String(minutes).padStart(2,'0');
+  document.getElementById('cdSeconds').textContent = String(seconds).padStart(2,'0');
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
 const form=document.getElementById('rsvpForm');
 const status=document.getElementById('rsvpStatus');
