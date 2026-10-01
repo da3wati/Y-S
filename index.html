@@ -633,6 +633,21 @@ main.show{opacity:1;transform:none}
   .countdown-label{font-size:14px}
 }
 
+
+.hall-image{
+  width:100%;
+  max-width:620px;
+  height:auto;
+  display:block;
+  margin:0 auto 18px;
+  border-radius:22px;
+  border:1px solid rgba(0,0,0,.20);
+  box-shadow:0 16px 35px rgba(35,20,45,.18);
+  object-fit:cover;
+}
+@media(max-width:520px){
+  .hall-image{border-radius:18px;margin-bottom:16px}
+}
 </style>
 </head>
 <body>
@@ -798,6 +813,8 @@ main.show{opacity:1;transform:none}
     <div class="location-card">
       <h2 class="location-title">موقع الحفل</h2>
       <div class="location-subtitle">Wedding Location</div>
+
+      <img class="hall-image" src="hall.jpg" alt="قاعة الحفلات الفرسان">
 
       <a class="location-button"
          href="https://maps.app.goo.gl/CEF3tU3BD52qiX3o7"
